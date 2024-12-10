@@ -19,11 +19,11 @@ tabs = st.tabs(["🏠 Home", "🔧 Feature Selection", "📊 Predict Price", "�
 # Load Model and Data
 @st.cache_resource
 def load_model():
-    return joblib.load("../Models/cat_model-v4.pkl")
+    return joblib.load("Models/cat_model-v4.pkl")
 
 @st.cache_data
 def load_test_data():
-    return pd.read_csv("../Data/laptop_price - dataset.csv").drop('Price (Euro)', axis=1)
+    return pd.read_csv("Data/laptop_price - dataset.csv").drop('Price (Euro)', axis=1)
 
 # Initialize
 model = load_model()
