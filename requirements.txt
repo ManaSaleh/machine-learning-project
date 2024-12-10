@@ -1,6 +1,9 @@
 catboost
 joblib
+lightgbm
 numpy
+matplotlib
 scipy
 seaborn
 scikit-learn
+streamlit
